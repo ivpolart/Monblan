@@ -1,0 +1,107 @@
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+fieldset {
+	width: 100%;
+	max-width: none !important;
+	margin-bottom: 20px !important;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	gap: 0 12px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	border-radius: 8px;
+	padding: 2px 6px;
+	display: block;
+	width: 100% !important;
+	outline: none;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.57;
+	color: #636264;
+
+	@include placeholder {
+		color: #636264;
+	}
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	// -webkit-appearance: none;
+	cursor: pointer;
+
+	&.btn-date {
+		@include size(26px);
+		
+		background: #EBEBEB;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		padding: 3px;
+		min-width: 26px;
+		outline: none;
+		color: #5F5F5F;
+		border: 1px solid $gray2;
+
+		.ico-close {
+			font-size: 14px;
+		}
+
+		.ico-calendar {
+			font-size: 20px;
+		}
+	}
+}
+
+.date-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 0 22px;
+}
+
+label {
+	font-size: 16px;
+}
+
+.date-field {
+	display: flex;
+	align-items: center;
+	border: 1px solid $gray2;
+	height: 28px;
+	max-width: 162px;
+	border-radius: 4px;
+
+	&:focus {
+		border-color: $gray2;
+	}
+}

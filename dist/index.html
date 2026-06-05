@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monblan</title>
+	<!-- Start:css -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- End:css -->
+	<!-- Start:js -->
+	<script src="js/main.min.js" defer></script>
+	<!-- End:js -->
+</head>
+<body>
+	<div class="decoration__wrapper">
+		<img class="decoration__img-01" src="images/decoration-01.svg" alt="">
+		<img class="decoration__img-02" src="images/decoration-02.svg" alt="">
+	</div>
+	<header id="header">
+	<div class="container">
+		<div class="columns columns--variable-width">
+			<div class="columns__column columns__column--width" style="--_column-width: 185;">
+				<strong class="logo"><a href="#"><img src="images/logo-monblan.svg" alt="Monblan"></a></strong>
+			</div>
+			<div class="columns__column columns__column--flex">
+				<div class="account">
+					<div class="account__name">
+						<h1>monblanproject</h1>
+						<span class="date-start">
+							Start on  17-02-2016
+						</span>
+					</div>
+					<div class="account__stats">
+						<p><b>870</b> posts</p>
+						<p><b>11,787</b> followers</p>
+						<p><b>112</b> following</p>
+					</div>
+					<div class="account__date">
+						<form>
+							<label for="date-from">Date</label>
+							<div class="date-wrapper">
+								<div class="date-field">
+									<input type="text" name="date-from" id="date-from" placeholder="from" autocomplete="off">
+									<button class="btn-date date-field__clear" type="button">
+										<i class="ico-close"></i>
+									</button>
+									<button class="btn-date date-field__calendar" type="button">
+										<i class="ico-calendar"></i>
+									</button>
+								</div>
+								<div class="date-field">
+									<input type="text" name="date-to" id="date-to" placeholder="to" autocomplete="off">
+									<button class="btn-date date-field__clear" type="button">
+										<i class="ico-close"></i>
+									</button>
+									<button class="btn-date date-field__calendar" type="button">
+										<i class="ico-calendar"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<style>
+</style>
+
+	<main id="main">
+		<section class="posts" style="--_desktop-offset: 60px;">
+			<div class="container">
+				<div class="posts__switcher">
+					<a href="javascript:;"><i class="ico-order-row"></i></a>
+					<a href="javascript:;"><i class="ico-order-grid"></i></a>
+				</div>
+				<div class="posts--rows">
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-02.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-03.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-04.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-05.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-05.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-06.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-07.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-01.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--rows__card">
+						<div class="posts--rows__img">
+							<img src="images/photo-01.jpg" alt="">
+						</div>
+						<div class="posts--rows__content">
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">Today</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>128</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>31</div>
+							</div>
+							<div class="posts--rows__column">
+								<div class="posts--rows__date">9-08-2016</div>
+								<div class="posts--rows__likes"><i class="ico-like"></i>67</div>
+								<div class="posts--rows__comments"><i class="ico-comments"></i>22</div>
+							</div>
+							<div class="posts--rows__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="posts--grid">
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-02.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-03.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-04.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-05.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-05.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-06.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-07.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+					<div class="posts--grid__card">
+						<div class="posts--grid__img">
+							<img src="images/photo-01.jpg" alt="">
+						</div>
+						<div class="posts--grid__content">
+							<div class="columns">
+								<div class="columns__column">
+									<div class="posts--grid__date">Today</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>128</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>31</div>
+								</div>
+								<div class="columns__column">
+									<div class="posts--grid__date">9-08-2016</div>
+									<div class="posts--grid__likes"><i class="ico-like"></i>67</div>
+									<div class="posts--grid__comments"><i class="ico-comments"></i>22</div>
+								</div>
+							</div>
+							<div class="posts--grid__upload-date">
+								<p>Image upload</p>
+								<p>11-04-2016</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-block">
+					<button class="btn">Load more</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="footer"></footer>
+</body>
+</html>

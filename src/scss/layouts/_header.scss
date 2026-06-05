@@ -1,0 +1,57 @@
+#header {
+	background: rgba(255, 255, 255, .67);
+	padding-top: 10px;
+	padding-bottom: 30px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, .12), inset 0 12px 24px rgba(0, 0, 0, .12);
+	position: relative;
+	z-index: 99;
+
+	.container {
+		--_container-width: 710;
+	}
+
+	.columns {
+
+		&__column {
+			
+			@include media('<tablet') {
+				--_column-width: 140 !important;
+			}
+		}
+	}
+
+	.account {
+		padding-top: 22px;
+		
+		&__name {
+			margin-bottom: 15px;
+			
+			@include media('>=tablet') {
+				display: flex;
+				gap: 0 17px;
+				margin-bottom: 8px;
+			}
+		}
+
+		&__stats {
+			display: flex;
+			gap: 0 24px;
+			font-size: 14px;
+			line-height: 1;
+			margin-left: 2px;
+		}
+
+		.date-start {
+			display: inline-block;
+			padding: 7px 11px;
+			font-size: 12px;
+			line-height: 1;
+			letter-spacing: .2px;
+			color: $blue;
+			border: 1px solid $blue;
+			border-radius: 2px;
+			height: 100%;
+			margin-top: 3px;
+		}
+	}
+}
