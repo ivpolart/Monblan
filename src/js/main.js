@@ -36,36 +36,57 @@ function initOrderSwitcher() {
 function initDatepickers() {
 	const dateFrom = document.querySelector('#date-from');
 	const dateTo = document.querySelector('#date-to');
+	const dateFields = document.querySelectorAll('.date-field');
 
-	let fromPicker = flatpickr(dateFrom, {
+	const fromPicker = flatpickr(dateFrom, {
 		dateFormat: 'd-m-Y',
 		allowInput: true,
+		disableMobile: true,
 		onChange: function (selectedDates) {
 			toPicker.set('minDate', selectedDates[0] || null);
 		},
 	});
 
-	let toPicker = flatpickr(dateTo, {
+	const toPicker = flatpickr(dateTo, {
 		dateFormat: 'd-m-Y',
 		allowInput: true,
+		disableMobile: true,
 		onChange: function (selectedDates) {
 			fromPicker.set('maxDate', selectedDates[0] || null);
 		},
+	});
+
+	const pickers = [fromPicker, toPicker];
+
+	dateFields.forEach(function (field, index) {
+		const picker = pickers[index];
+
+		field.querySelector('.date-field__clear').addEventListener('click', function () {
+			picker.clear();
+
+			if (index === 0) {
+				toPicker.set('minDate', null);
+			} else {
+				fromPicker.set('maxDate', null);
+			}
+		});
+
+		field.querySelector('.date-field__calendar').addEventListener('click', function () {
+			picker.open();
+		});
 	});
 }
 
 function initLoadMore() {
 	const loadMoreButton = document.querySelector('.btn-block .btn');
-	const rows = document.querySelector('.posts--rows');
-	const grid = document.querySelector('.posts--grid');
-	const rowCards = Array.from(rows.querySelectorAll('.posts--rows__card'));
-	const gridCards = Array.from(grid.querySelectorAll('.posts--grid__card'));
-	const postsPerLoad = 4;
+	const extraCards = document.querySelectorAll('[data-extra-post]');
 
 	loadMoreButton.addEventListener('click', function () {
-		appendCards(rows, rowCards.slice(0, postsPerLoad));
-		appendCards(grid, gridCards.slice(0, postsPerLoad));
-		loadMoreButton.hidden = true;
+		extraCards.forEach(function (card) {
+			card.hidden = false;
+		});
+
+		loadMoreButton.style.display = 'none';
 	});
 }
 

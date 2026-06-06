@@ -13,9 +13,12 @@ fieldset {
 }
 
 form {
-	display: flex;
-	align-items: center;
-	gap: 0 12px;
+	
+	@include media('>=phone') {
+		display: flex;
+		align-items: center;
+		gap: 0 12px;
+	}
 }
 
 input[type='text'],
@@ -84,9 +87,12 @@ input[type='submit'] {
 }
 
 .date-wrapper {
-	display: flex;
-	align-items: center;
-	gap: 0 22px;
+	
+	@include media('>=phone') {
+		display: flex;
+		align-items: center;
+		gap: 0 22px;
+	}
 }
 
 label {
@@ -98,8 +104,13 @@ label {
 	align-items: center;
 	border: 1px solid $gray2;
 	height: 28px;
-	max-width: 162px;
 	border-radius: 4px;
+	margin-bottom: 10px;
+
+	@include media('>=phone') {
+		margin-bottom: 0;
+		max-width: 162px;
+	}
 
 	&:focus {
 		border-color: $gray2;
